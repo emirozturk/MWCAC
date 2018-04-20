@@ -1,5 +1,5 @@
 # MWCA 
-MWCA is a multi-stream word-based compression algorithm based on spaceless word model. MWCA is semi-static, which means, it creates two seperate dictionary files for each input. Dictionaries are created using most frequent 255+65536 words. Implementation details and performance results could be obtained from article:
+MWCA is a multi-stream word-based compression algorithm based on spaceless word model. MWCA is semi-static, which means, it creates two seperate dictionary files for each input. Dictionaries are created using most frequent 255+65536 words. Implementation details and performance results could be obtained from article:  
 "E. ÖZTÜRK, A. MESUT, B. DİRİ, "Çoklu Akış Destekli Kelime Tabanlı Sıkıştırma Algoritması", Uluslararası Bilgisayar Bilimleri ve Mühendisliği Konferansı, UBMK 2017."  
   
 MWCA generates 6 seperate streams from one input file.  
