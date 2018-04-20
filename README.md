@@ -3,27 +3,27 @@ MWCA is a multi-stream word-based compression algorithm based on spaceless word 
 "E. ÖZTÜRK, A. MESUT, B. DİRİ, "Çoklu Akış Destekli Kelime Tabanlı Sıkıştırma Algoritması", Uluslararası Bilgisayar Bilimleri ve Mühendisliği Konferansı, UBMK 2017."  
   
 MWCA generates 6 seperate streams from one input file.  
-s1-> Dictionary for most frequent 255 keywords. 
-s2-> Dictionary for most frequent 65536 keywords. 
-f-> Codewords of words from s1. 
-s-> Codewords of words from s2. 
-z-> Bit vector containing word sequence. 
+s1-> Dictionary for most frequent 255 keywords.  
+s2-> Dictionary for most frequent 65536 keywords.   
+f-> Codewords of words from s1.  
+s-> Codewords of words from s2.  
+z-> Bit vector containing word sequence.  
 o-> Uncompressed words which is excluded from 255+65536 most frequent words.  
-
-MWCA could be used as:
-
-./MWCA inputfile
-
-It wil generate 6 different files. Generated files will add their own extensions to the file name. For example:
-./MWCA loremipsum.txt will generate
-loremipsum.txt.s1 
-loremipsum.txt.s2 
-loremipsum.txt.f 
-loremipsum.txt.s 
-loremipsum.txt.z 
-loremipsum.txt.o 
-
-To decompress, MWDA could be used as:
+  
+MWCA could be used as:  
+  
+./MWCA inputfile  
+  
+It wil generate 6 different files. Generated files will add their own extensions to the file name. For example:  
+./MWCA loremipsum.txt will generate  
+loremipsum.txt.s1  
+loremipsum.txt.s2  
+loremipsum.txt.f  
+loremipsum.txt.s  
+loremipsum.txt.z  
+loremipsum.txt.o  
+  
+To decompress, MWDA could be used as:  
 ./MWDA loremipsum.txt  
   
 MWDA needs the input file name without additional 6 stream extensions but needs the 6 files and not the original one.  
