@@ -28,4 +28,4 @@ To decompress, MWDA could be used as:
   
 MWDA needs the input file name without additional 6 stream extensions but needs the 6 files and not the original one.  
 The implementation doesn't handle exceptions so if it couldn't find one or more of the 6 streams the application will crush.  
-MWDA generates original file from six streams with another extension ".wba" which will create loremipsum.txt.wba for our example. And MWDA will not remove the six streams. The aim of this implementation choice is to get experimental results about compression ratio and compare input / output files.
+MWDA generates original file from six streams with another extension ".wba" which will create loremipsum.txt.wba for our example. And MWDA will not remove the six streams. The aim of this implementation choice is to get experimental results about compression ratio and to compare input / output files.
